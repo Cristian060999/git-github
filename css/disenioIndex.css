@@ -261,3 +261,22 @@ footer, h4{
     background-color: #0D0D0D;
     color: #F2F2F2;
 }
+
+.animacion{
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion {
+    0%{
+
+    }
+    50%{
+        transform: translateX(-1000px);
+    }
+    75%{
+        transform: rotate(-360deg);
+    }
+   
+}
