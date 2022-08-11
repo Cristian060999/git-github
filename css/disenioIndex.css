@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 480px) {
+    body{
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+        background-color: aqua;
+    } 
+    img{
+        margin: 20px;
+        height: 100px;
+        width: 100px;  
+    }
+    a{
+        font-size: 0.65rem;
+    }
+    p, h4{
+        font-size: 0.75rem;
+    }
+    .quienSomos{
+        text-align: center;
+    }
+    .quienSomos p{
+        padding: 15px;
+    }
+    .contacto{
+        display: grid;
+        align-items: flex-start;
+        text-align: center;    
+    }
+    p{
+        padding: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    body{
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+        background-color: red;
+    } 
+    img{
+        margin: 20px;
+        height: 150px;
+        width: 150px;  
+    }
+    a{
+        font-size: 1rem;
+    }
+    p, h4{
+        font-size: 1rem;
+    }
+    .quienSomos{
+        text-align: center;
+    }
+    .quienSomos p{
+        padding: 15px;
+    }
+    .contacto{
+        display: grid;
+        align-items: flex-start;
+        text-align: center;    
+    }
+    p{
+        padding: 10px;
+    }
+    .licoresVariedad{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    
+    .trabajoEnEquipo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .licorCostoso{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .pQuienSomos{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body{
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+        background-color: yellow;
+    } 
+    img{
+        margin: 20px;
+        height: 175px;
+        width: 175px;  
+    }
+    a{
+        font-size: 1rem;
+    }
+    p, h4{
+        font-size: 1rem;
+    }
+    .quienSomos{
+        text-align: center;
+    }
+    .quienSomos p{
+        padding: 15px;
+    }
+    .contacto{
+        display: grid;
+        align-items: flex-start;
+        text-align: center;    
+    }
+    p{
+        padding: 10px;
+    }
+    .licoresVariedad{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    
+    .trabajoEnEquipo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .licorCostoso{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .pQuienSomos{
+        font-size: 1rem;
+    }
+}
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.secciones{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.wireframe, h2, p{
+    background-color: #594534;
+}
+
+.wireframe{
+    text-align: center;
+}
+h2, p{
+    color: #F2F2F2;
+    text-align: center;
+}
+
+.menu{
+    background-color: #594534;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a:hover{
+    background-color: black;
+}
+a{
+    background-color: #594534;
+    text-decoration: none;
+    color: #F2F2F2;
+    padding: 10px;
+}
+
+.img{
+    background-color: #594534;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    color: #F2F2F2;
+    background-color: #594534;
+    padding: 20px;
+}
+p{
+    margin-bottom: 10px;
+}
+footer, h4{
+    text-align: end;
+    padding: 10px;
+    background-color: #594534;
+    margin-top: 30px;
+    color: #F2F2F2;
+}
+.btn{
+    color: #F2F2F2;
+    margin-right: 35px;
+    padding: 10px;
+    background-color: #594534;
+    cursor: pointer;
+    border: solid 1px #F2F2F2;
+}
+.btn:hover{
+    background-color: black;
+}
+.registro{
+    color: #F2F2F2;
+    background-color: #0D0D0D;
+    padding: 10px;
+}
+.formulario{
+    text-align: center;
+}
+.producto{
+    text-align: center;
+}
+.productos{
+    padding: 10px;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+}
+.sugerencias{
+    text-align: center;
+}
+
+.textSugerencia{
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+}
